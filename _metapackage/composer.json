@@ -3,12 +3,13 @@
     "description": "Adobe Experience Platform Launch integration",
     "type": "metapackage",
     "require": {
-        "adobe/module-launch": "*",
-        "adobe/module-launch-catalog": "*",
-        "adobe/module-launch-catalog-search": "*",
-        "adobe/module-launch-checkout": "*",
-        "adobe/module-launch-theme": "*",
-        "adobe/module-launch-customer": "*",
-        "adobe/module-launch-admin-ui": "*"
-    }
+        "adobe/module-launch": "1.0.0-beta",
+        "adobe/module-launch-catalog": "1.0.0-beta",
+        "adobe/module-launch-catalog-search": "1.0.0-beta",
+        "adobe/module-launch-checkout": "1.0.0-beta",
+        "adobe/module-launch-theme": "1.0.0-beta",
+        "adobe/module-launch-customer": "1.0.0-beta",
+        "adobe/module-launch-admin-ui": "1.0.0-beta"
+    },
+    "version": "1.0.0-beta"
 }

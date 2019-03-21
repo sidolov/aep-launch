@@ -3,10 +3,10 @@
     "description": "Launch datalayer for Checkout module",
     "require": {
         "php": "~7.1.3||~7.2.0",
-        "magento/framework": "*",
-        "magento/module-checkout": "*",
-        "magento/module-quote": "*",
-        "adobe/module-launch": "*"
+        "magento/framework": "102.0.*",
+        "magento/module-checkout": "100.3.*",
+        "magento/module-quote": "101.1.*",
+        "adobe/module-launch": "1.0.*"
     },
     "type": "magento2-module",
     "license": [
@@ -20,5 +20,6 @@
         "psr-4": {
             "Adobe\\LaunchCheckout\\": ""
         }
-    }
+    },
+    "version": "1.0.0-beta"
 }
