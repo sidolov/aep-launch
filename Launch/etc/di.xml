@@ -7,4 +7,130 @@
                 type="Adobe\Launch\CustomerData\AddPrivateDatalayerEvent" />
     <preference for="Adobe\Launch\Api\GetAllDatalayerEventsInterface"
                 type="Adobe\Launch\Model\Command\GetAllDatalayerEvents" />
+    <type name="Adobe\Launch\Model\Provision\Pipeline">
+        <arguments>
+            <argument name="pipes" xsi:type="array">
+                <item name="CreateBearerToken" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateBearerToken</item>
+                    <item name="sortOrder" xsi:type="string">10</item>
+                </item>
+                <item name="GetCompanyId" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetCompanyId</item>
+                    <item name="sortOrder" xsi:type="string">20</item>
+                </item>
+                <item name="CreateProperty" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateProperty</item>
+                    <item name="sortOrder" xsi:type="string">30</item>
+                </item>
+                <item name="CreateAdapter" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateAdapter</item>
+                    <item name="sortOrder" xsi:type="string">40</item>
+                </item>
+                <item name="CreateDevEnvironment" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateDevEnvironment</item>
+                    <item name="sortOrder" xsi:type="string">50</item>
+                </item>
+                <item name="CreateStageEnvironment" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateStageEnvironment</item>
+                    <item name="sortOrder" xsi:type="string">60</item>
+                </item>
+                <item name="CreateProdEnvironment" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateProdEnvironment</item>
+                    <item name="sortOrder" xsi:type="string">70</item>
+                </item>
+                <item name="CreateLibrary" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateLibrary</item>
+                    <item name="sortOrder" xsi:type="string">80</item>
+                </item>
+                <item name="SetLibraryEnvironmentToDev" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\SetLibraryEnvironmentToDev</item>
+                    <item name="sortOrder" xsi:type="string">90</item>
+                </item>
+                <item name="GetExtensionPackageIds" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetExtensionPackageIds</item>
+                    <item name="sortOrder" xsi:type="string">100</item>
+                </item>
+                <item name="GetCoreExtensionId" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetCoreExtensionId</item>
+                    <item name="sortOrder" xsi:type="string">110</item>
+                </item>
+                <item name="CreateAdobeAnalyticsExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateAdobeAnalyticsExtension</item>
+                    <item name="sortOrder" xsi:type="string">120</item>
+                </item>
+                <item name="CreateExperienceCloudIdServiceExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateExperienceCloudIdServiceExtension</item>
+                    <item name="sortOrder" xsi:type="string">130</item>
+                </item>
+                <item name="CreateConstantDataElementExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateConstantDataElementExtension</item>
+                    <item name="sortOrder" xsi:type="string">140</item>
+                </item>
+                <item name="GetTargetClientCode" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetTargetClientCode</item>
+                    <item name="sortOrder" xsi:type="string">150</item>
+                </item>
+                <item name="CreateTargetExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateTargetExtension</item>
+                    <item name="sortOrder" xsi:type="string">160</item>
+                </item>
+                <item name="CreateSDIToolkitExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateSDIToolkitExtension</item>
+                    <item name="sortOrder" xsi:type="string">170</item>
+                </item>
+                <item name="CreateSDIProductStringExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateSDIProductStringExtension</item>
+                    <item name="sortOrder" xsi:type="string">180</item>
+                </item>
+                <item name="CreateSDIDataLayerManagerExtension" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateSDIDataLayerManagerExtension</item>
+                    <item name="sortOrder" xsi:type="string">190</item>
+                </item>
+                <item name="CreateDataElement" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateDataElement</item>
+                    <item name="sortOrder" xsi:type="string">200</item>
+                </item>
+                <item name="CreateRules" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateRules</item>
+                    <item name="sortOrder" xsi:type="string">210</item>
+                </item>
+                <item name="CreateRuleComponents" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\CreateRuleComponents</item>
+                    <item name="sortOrder" xsi:type="string">220</item>
+                </item>
+                <item name="GetUnpublishedRules" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetUnpublishedRules</item>
+                    <item name="sortOrder" xsi:type="string">230</item>
+                </item>
+                <item name="GetUnpublishedDataElements" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetUnpublishedDataElements</item>
+                    <item name="sortOrder" xsi:type="string">240</item>
+                </item>
+                <item name="GetUnpublishedDataExtensions" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\GetUnpublishedDataExtensions</item>
+                    <item name="sortOrder" xsi:type="string">250</item>
+                </item>
+                <item name="SetUnpublishedRules" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\SetUnpublishedRules</item>
+                    <item name="sortOrder" xsi:type="string">260</item>
+                </item>
+                <item name="SetUnpublishedDataElements" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\SetUnpublishedDataElements</item>
+                    <item name="sortOrder" xsi:type="string">270</item>
+                </item>
+                <item name="SetUnpublishedExtensions" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\SetUnpublishedExtensions</item>
+                    <item name="sortOrder" xsi:type="string">280</item>
+                </item>
+                <item name="SetUnpublishedEnvironments" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\SetUnpublishedEnvironments</item>
+                    <item name="sortOrder" xsi:type="string">290</item>
+                </item>
+                <item name="BuildDevLibrary" xsi:type="array">
+                    <item name="pipe" xsi:type="object">Adobe\Launch\Model\Provision\Pipeline\BuildDevLibrary</item>
+                    <item name="sortOrder" xsi:type="string">300</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
 </config>
